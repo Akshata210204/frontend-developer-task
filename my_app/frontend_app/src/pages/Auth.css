@@ -1,0 +1,41 @@
+.auth-bg {
+  min-height: 100vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1683309560255-af9b1c29d42e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-start;   /* 👈 move card to left */
+  align-items: center;           /* 👈 vertical middle */
+  padding-left: 8%;
+}
+
+  
+.auth-card {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+      135deg,
+      #e6f4ff,
+      #f2f9ff
+    );                             /* 👈 baby blue */
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .auth-card h2 {
+    color: #1f4fd8;
+    font-weight: 600;
+  }
+  
+  .auth-card input {
+    border-radius: 10px;
+  }
+  
+  .auth-card button {
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
