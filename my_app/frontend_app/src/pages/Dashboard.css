@@ -1,0 +1,48 @@
+.dashboard-bg {
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/textured-backgrounds-from-blue-paper-stickers-sticky-notes-blank-generative-ai_786587-19589.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dashboard-content {
+  min-height: 100vh;
+  
+  color: white;
+  display: flex;
+  font-style: italic;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-sub {
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.dash-card {
+  width: 260px;
+  height: 160px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dash-card:hover {
+  transform: scale(1.05);
+}

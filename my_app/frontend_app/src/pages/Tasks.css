@@ -1,0 +1,137 @@
+.tasks-bg {
+  min-height: 100vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1683543124524-cbc52e793a02?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5vdGVzfGVufDB8fDB8fHww");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-layout {
+  width: 95%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr; /* left small, right big */
+  gap: 20px;
+}
+
+.left-box,
+.right-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.box-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tasks-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed {
+  border-left: 4px solid #22c55e;
+  background-color: #f9fafb;
+}
+
+
+.status {
+  font-size: 12px;
+}
+
+.status.pending {
+  color: #f59e0b;
+}
+
+.status.completed {
+  color: #10b981;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-radius: 12px;
+}
+
+.empty-text {
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tasks-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.checkbox-wrapper input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.check-text {
+  color: #374151;
+}
+/* STATUS BADGES */
+.status-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.status-badge.red {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-badge.green {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* TASK BORDER INDICATOR */
+.task-item.pending {
+  border-left: 4px solid #ef4444;
+}
+
+.task-item.completed {
+  border-left: 4px solid #22c55e;
+  background-color: #f9fafb;
+}
